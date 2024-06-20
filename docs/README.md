@@ -64,6 +64,4 @@ Click on the links below for instructions on how to configure each platform.
 * [SmartIR Chat on Telegram](https://t.me/smartHomeHub)
 
 <br><br>
-<p align="center">
-  <a href="https://www.buymeacoffee.com/vassilis"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="SmartIR Climate"></a>
-</p>
+
