@@ -1,5 +1,5 @@
-SmartIR is a custom integration for controlling **climate devices**, **media players** and **fans** via infrared controllers.<br>
-SmartIR currently supports the following controllers:
+HomicIR is a custom integration for controlling **climate devices**, **media players** and **fans** via infrared controllers.<br>
+HomicIR currently supports the following controllers:
 * [Broadlink](https://www.home-assistant.io/integrations/broadlink/)
 * [Xiaomi IR Remote (ChuangmiIr)](https://www.home-assistant.io/integrations/remote.xiaomi_miio/)
 * [LOOK.in Remote](http://look-in.club/devices/remote)
