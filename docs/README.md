@@ -2,8 +2,9 @@
 
 ## Overview
 HomicIR is fork repo from SmartIR <br> <br> 
-SmartIR is a custom integration for controlling **climate devices**, **media players** and **fans** via infrared controllers.<br>
-SmartIR currently supports the following controllers:
+
+HomicIR is a custom integration for controlling **climate devices**, **media players** and **fans** via infrared controllers.<br>
+HomicIR currently supports the following controllers:
 * [Broadlink](https://www.home-assistant.io/integrations/broadlink/)
 * [To learn new commands for your devices using Broadlink](https://community.home-assistant.io/t/broadlink-manager-nicer-way-to-learn-and-send-ir-rf-commands/58770).
 * [Xiaomi IR Remote (ChuangmiIr)](https://www.home-assistant.io/integrations/remote.xiaomi_miio/)
