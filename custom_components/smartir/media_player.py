@@ -20,7 +20,7 @@ from .controller import get_controller
 
 _LOGGER = logging.getLogger(__name__)
 
-DEFAULT_NAME = "SmartIR Media Player"
+DEFAULT_NAME = "HomicIR Media Player"
 DEFAULT_DEVICE_CLASS = "tv"
 DEFAULT_DELAY = 0.5
 
