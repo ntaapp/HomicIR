@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="#"><img src="assets/smartir_climate.png" width="350" alt="SmartIR Climate"></a>
+  <a href="#"><img src="assets/homicir_climate.png" width="350" alt="homicir Climate"></a>
 </p>
 
 For this platform to work, we need a .json file containing all the necessary IR commands.
-Find your device's brand code [here](CLIMATE.md#available-codes-for-climate-devices) and add the number in the `device_code` field. If your device is not working, you will need to learn your own codes and place the Json file in `smartir/codes/climate` subfolders. ~~[Keite Trần](https://github.com/keitetran/BroadlinkIRTools) developed [an amazing web-based app](https://keitetran.github.io/BroadlinkIRTools/) for this job.~~
+Find your device's brand code [here](CLIMATE.md#available-codes-for-climate-devices) and add the number in the `device_code` field. If your device is not working, you will need to learn your own codes and place the Json file in `homicir/codes/climate` subfolders. ~~[Keite Trần](https://github.com/keitetran/BroadlinkIRTools) developed [an amazing web-based app](https://keitetran.github.io/BroadlinkIRTools/) for this job.~~
 _Please note that the device_code field only accepts positive numbers. The .json extension is not required._
 
 ## Configuration variables:
@@ -23,10 +23,10 @@ _Please note that the device_code field only accepts positive numbers. The .json
 Add a Broadlink RM device named "Bedroom" via config flow (read the [docs](https://www.home-assistant.io/integrations/broadlink/)).
 
 ```yaml
-smartir:
+homicir:
 
 climate:
-  - platform: smartir
+  - platform: homicir
     name: Office AC
     unique_id: office_ac
     device_code: 1000
@@ -38,7 +38,7 @@ climate:
 
 ## Example (using xiaomi controller):
 ```yaml
-smartir:
+homicir:
 
 remote:
   - platform: xiaomi_miio
@@ -46,7 +46,7 @@ remote:
     token: YOUR_TOKEN
 
 climate:
-  - platform: smartir
+  - platform: homicir
     name: Office AC
     unique_id: office_ac
     device_code: 2000
@@ -58,10 +58,10 @@ climate:
 
 ## Example (using mqtt controller):
 ```yaml
-smartir:
+homicir:
 
 climate:
-  - platform: smartir
+  - platform: homicir
     name: Office AC
     unique_id: office_ac
     device_code: 3000
@@ -74,10 +74,10 @@ climate:
 
 ## Example (using LOOKin controller):
 ```yaml
-smartir:
+homicir:
 
 climate:
-  - platform: smartir
+  - platform: homicir
     name: Office AC
     unique_id: office_ac
     device_code: 4000
@@ -110,10 +110,10 @@ remote_transmitter:
 ```
 HA configuration.yaml:
 ```yaml
-smartir:
+homicir:
 
 climate:
-  - platform: smartir
+  - platform: homicir
     name: Office AC
     unique_id: office_ac
     device_code: 8000
@@ -240,6 +240,7 @@ Contributing to your own code files is welcome. However, we do not accept incomp
 | [1136](../codes/climate/1136.json) | MSXY-FP10VG<br>MSXY-FP13VG<br>MSXY-FP18VG                                                            | Broadlink  |
 | [1137](../codes/climate/1137.json) | MSZ-HR35VF                                                                                           | Broadlink  |
 | [1138](../codes/climate/1138.json) | MSZ-FD25VA-E2 (KM09D/0166901 Remote)                                                                 | Broadlink  |
+| [11381](../codes/climate/11381.json) | SRK18CEV, SRK09CJ (RKX502A001 Remote)                                                                 | Broadlink  |
 | [1139](../codes/climate/1139.json) | MLZ-KP series (SG176 Remote)                                                                        | Broadlink  |
 | [4129](../codes/climate/4129.json) | DXK18Z1-S                                                                                            | Xiaomi v2  |
 | [7124](../codes/climate/7124.json) | MSZ-SF25VE3<br>MSZ-SF35VE3<br>MSZ-SF42VE3<br>MSZ-SF50VE<br>MSZ-AP20VG                                | ESPHome |

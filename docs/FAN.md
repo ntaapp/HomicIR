@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="#"><img src="assets/smartir_fan.png" width="350" alt="SmartIR Media Player"></a>
+  <a href="#"><img src="assets/homicir_fan.png" width="350" alt="HomicIR Media Player"></a>
 </p>
 
 For this platform to work, we need a .json file containing all the necessary IR or RF commands.
-Find your device's brand code [here](FAN.md#available-codes-for-fan-devices) and add the number in the `device_code` field. The compoenent will download it to the correct folder. If your device is not working, you will need to learn your own codes and place the .json file in `smartir/codes/fan/` subfolders. Please note that the `device_code` field only accepts positive numbers. The .json extension is not required.
+Find your device's brand code [here](FAN.md#available-codes-for-fan-devices) and add the number in the `device_code` field. The compoenent will download it to the correct folder. If your device is not working, you will need to learn your own codes and place the .json file in `homicir/codes/fan/` subfolders. Please note that the `device_code` field only accepts positive numbers. The .json extension is not required.
 
 ## Configuration variables
 
@@ -19,10 +19,10 @@ Find your device's brand code [here](FAN.md#available-codes-for-fan-devices) and
 Add a Broadlink RM device named "Bedroom" via config flow (read the [docs](https://www.home-assistant.io/integrations/broadlink/)).
 
 ```yaml
-smartir:
+homicir:
 
 fan:
-  - platform: smartir
+  - platform: homicir
     name: Bedroom fan
     unique_id: bedroom_fan
     device_code: 1000
@@ -33,7 +33,7 @@ fan:
 ## Example (using xiaomi controller)
 
 ```yaml
-smartir:
+homicir:
 
 remote:
   - platform: xiaomi_miio
@@ -41,7 +41,7 @@ remote:
     token: YOUR_TOKEN
 
 fan:
-  - platform: smartir
+  - platform: homicir
     name: Bedroom fan
     unique_id: bedroom_fan
     device_code: 2000
@@ -52,10 +52,10 @@ fan:
 ## Example (using mqtt controller)
 
 ```yaml
-smartir:
+homicir:
 
 fan:
-  - platform: smartir
+  - platform: homicir
     name: Bedroom fan
     unique_id: bedroom_fan
     device_code: 3000
@@ -66,10 +66,10 @@ fan:
 ## Example (using LOOKin controller)
 
 ```yaml
-smartir:
+homicir:
 
 fan:
-  - platform: smartir
+  - platform: homicir
     name: Bedroom fan
     unique_id: bedroom_fan
     device_code: 4000
@@ -104,10 +104,10 @@ remote_transmitter:
 HA configuration.yaml:
 
 ```yaml
-smartir:
+homicir:
 
 fan:
-  - platform: smartir
+  - platform: homicir
     name: Bedroom fan
     unique_id: bedroom_fan
     device_code: 4000
@@ -195,3 +195,7 @@ Contributing to your own code files is welcome. However, we do not accept incomp
 | Code | Supported Models | Controller |
 | ------------- | -------------------------- | ------------- |
 [1220](../codes/fan/1220.json)|C56-RW5|Broadlink
+
+| Code | Supported Models | Controller |
+| ------------- | -------------------------- | ------------- |
+[2000](../codes/fan/2000.json)|F-56XPG|Broadlink
