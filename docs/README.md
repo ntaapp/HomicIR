@@ -1,7 +1,7 @@
 [![](https://img.shields.io/github/v/release/smartHomeHub/SmartIR.svg?style=flat-square)](https://github.com/smartHomeHub/SmartIR/releases/latest) [![](https://img.shields.io/badge/HACS-Custom-orange.svg?style=flat-square)](https://github.com/custom-components/hacs)
 
 ## Overview
-HomicIR is fork repo from SmartIR <br> 
+HomicIR is fork repo from SmartIR <br> <br> 
 SmartIR is a custom integration for controlling **climate devices**, **media players** and **fans** via infrared controllers.<br>
 SmartIR currently supports the following controllers:
 * [Broadlink](https://www.home-assistant.io/integrations/broadlink/)
@@ -60,9 +60,7 @@ Click on the links below for instructions on how to configure each platform.
 * [Fan platform](/docs/FAN.md)
 <br><br>
 
-## See also
-* [Discussion about SmartIR Climate (Home Assistant Community)](https://community.home-assistant.io/t/smartir-control-your-climate-tv-and-fan-devices-via-ir-rf-controllers/)
-* [SmartIR Chat on Telegram](https://t.me/smartHomeHub)
+
 
 <br><br>
 
