@@ -1,4 +1,4 @@
-[![](https://img.shields.io/github/v/release/smartHomeHub/SmartIR.svg?style=flat-square)](https://github.com/smartHomeHub/SmartIR/releases/latest) [![](https://img.shields.io/badge/HACS-Custom-orange.svg?style=flat-square)](https://github.com/custom-components/hacs)
+ 
 
 ## Overview
 HomicIR is fork repo from SmartIR <br> <br> 
@@ -23,7 +23,7 @@ It should look similar to this:
 ```
 <config directory>/
 |-- custom_components/
-|   |-- smartir/
+|   |-- homicir/
 |       |-- __init__.py
 |       |-- climate.py
 |       |-- fan.py
@@ -32,25 +32,25 @@ It should look similar to this:
 ```
 **(2)** Add the following to your configuration.yaml file.
 ```yaml
-smartir:
+homicir:
 ```
 
-SmartIR automatically detects updates after each HA startup and asks you to install them. It also has a mechanism that prevents you from updating if the last SmartIR version is incompatible with your HA instance. You can disable this feature by setting SmartIR as follows:
+homicir automatically detects updates after each HA startup and asks you to install them. It also has a mechanism that prevents you from updating if the last homicir version is incompatible with your HA instance. You can disable this feature by setting homicir as follows:
 ```yaml
-smartir:
+homicir:
   check_updates: false
 ```
 
-If you would like to get updates from the rc branch (Release Candidate), configure SmartIR as follows:
+If you would like to get updates from the rc branch (Release Candidate), configure homicir as follows:
 ```yaml
-smartir:
+homicir:
   update_branch: rc
 ```
 
 **(3)** Configure a platform.
 
 ### *HACS*
-If you want HACS to handle installation and updates, add SmartIR as a [custom repository](https://hacs.xyz/docs/faq/custom_repositories/). In this case, it is recommended that you turn off automatic updates, as above.
+If you want HACS to handle installation and updates, add homicir as a [custom repository](https://hacs.xyz/docs/faq/custom_repositories/). In this case, it is recommended that you turn off automatic updates, as above.
 <br><br>
 
 
